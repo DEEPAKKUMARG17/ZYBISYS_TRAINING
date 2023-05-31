@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        navigation 
+    </title>
+    <link rel="stylesheet" href="Day4_audiovideo.css">
+    <script>
+        function local() {
+            var pos = document.getElementById("text").value;
+            localStorage.setItem("lastname", pos);
+        }
+        function gettext() {
+
+
+            document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+
+        }
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+        function drop(ev) {
+            var post = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(post));
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <a href="">
+                <h1>Login page</h1>
+            </a>
+            <ul style="margin-top:30px">
+                <li> <a href="#services">Services</a> </li>
+                <li> <a href="#about">About Us</a> </li>
+                <li> <a href="#contact">contact us</a> </li>
+            </ul>
+        </nav>
+    </header><br><br><br><br><br>
+    <main>
+        <section style="background-color: 	#ffe4c4;" id="about">
+            <h3 style="text-decoration-line: underline;text-decoration-thickness: 5px;"> About us</u> </h3>
+            <p>Indraganesan College of Engineering was founded by <mark>Vidya Seva Ratnam”, “Guru Seva Mani” Auditor Sri.
+                    K. Santhanam in the year 1998</mark>. It was so named in respectful memory of his Guru Principal
+                Saranathan, the greatest ever Principal of National College. It is a self financing college approved by
+                AICTE and affiliated to Anna University, Chennai.
+
+                The college was temporarily (approx. 2 years) located in the Seshasayee Institute of Technology, thanks
+                to the gracious permission from the Honorary Secretary and Correspondent of that Institution, Er. G.
+                Sundaram and shifted to its current sprawling 40 acre campus on the Chennai – Madurai Expressway at
+                Panjappur on 3rd January 2000 and was formally inaugurated on 19th October 2000, by “Peraasiriyar K
+                Anbazhagan, the then Minister of Education, Government of Tamil Nadu.
+
+                The college has a current annual intake of 660 students for the 7 branches offered at the undergraduate
+                level and 132 students for the 5 courses offered at the post-graduate level.
+
+                With a built up area of 200000 sq ft, 8 seminar halls and a state of the art library with more than
+                55688 books and 225 periodicals and journals (both national and international), the college offers the
+                ideal environment for the students to absorb and assimilate the top class technical education and
+                professional training offered.
+
+                The college has a well equipped Computer Centre and has installed internet with 76 Mbps connectivity.
+                The entire college is networked with unique log-in IDs and passwords for each student. The Computer
+                Centre takes great pride in the fact that they have installed and run a dedicated “cloud centre”.</p>
+        </section>
+
+        <section style="background-color:#ffe4b5; display:flex justify; letter-spacing: 2px; " id="services">
+            <h3 style="text-decoration-line: underline;text-decoration-thickness:5px">SERVICES OFFERED</h3>
+            <ul>
+                <li>
+                    <h4>Cloud Computing</h4>
+                    <p style="font-weight: 300;">The term cloud refers to a network or the internet. It is a technology
+                        that uses remote servers on the internet to store, manage, and access data online rather than
+                        local drives.
+                        The data can be anything such as files, images, documents, audio, video, and more.</p>
+                </li>
+                <li>
+                    <h4> Devops</h4>
+
+                    <p>DevOps is the combination of cultural philosophies, practices, and tools that increases an
+                        organization’s ability to deliver applications and services at high velocity: evolving and
+                        improving products at a faster pace than organizations using traditional software development
+                        and infrastructure management processes.
+                        This speed enables organizations to better serve their customers and compete more effectively in
+                        the market.</p>
+                </li>
+                <li>
+                    <h4>machine learning</h4>
+
+                    <p>A Machine Learning system learns from historical data, builds the prediction models, and whenever
+                        it receives new data, predicts the output for it. The accuracy of predicted output depends upon
+                        the amount of data, as the huge amount of data helps to build a better model which predicts the
+                        output more accurately.
+
+                        Suppose we have a complex problem, where we need to perform some predictions, so instead of
+                        writing a code for it, we just need to feed the data to generic algorithms, and with the help of
+                        these algorithms, machine builds the logic as per the data and predict the output. Machine
+                        learning has changed our way of thinking about the problem.
+                    </p>
+                </li>
+
+            </ul>
+        </section>
+        <section id="contact" style=" padding:50px;margin-left: 200px; border:1px solid black; margin-right: 100px;">
+            <form style="margin-left: 200px;">
+                <label for="name" class="label2">Name:</label>
+                <input type="text" name="name" id="name" class="input"><br><br>
+                <label for="number" class="label2">Phone Number:</label>
+                <input type="number" name="number" id="number" class="input"><br><br>
+                <label for="area" class="label2">Enter Description</label>
+                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+
+            </form>
+            </section>
+            <br><br>
+        <!-- iframe used to intregrate other websites into our website-->
+        <iframe src="https://www.jiocinema.com/" frameborder="0" width="1000px;" height="1500px"></iframe>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/WrRB-8eLfsA" title="How Do VFX Artists Make CG Animals?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <section>
+            <!--Audio tag is being used for having audio in our website with controls-->
+            <audio controls loop muted>
+                <source src="bgm.mp3" type="audio/mp3">
+                this will not display audio
+            </audio>
+        </section>
+        <section>
+            <!--video tag is being used for having video in our website with controls-->
+            <video controls muted poster="images/new.jfif" >
+                <source src="video1.mp4" type="video/mp4" height="600px" width="500px">
+                this will no play
+            </video>
+        </section>
+        <section>
+            <!--This code is used for storing content in Local storage-->
+            <form id="form1">
+                <input type="text" name="text" id="text">
+                <input type="button" class="submit" value="submit" onclick="local()">
+                <input type="button" class="submit" value="retrive" onclick="gettext()">
+            </form>
+            <p id="result"></p>
+        </section>
+        <section>
+                     <!--This part of code is used for Drag and Drop option using JavaScript-->
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="../images/pop.jfif" alt="hello" draggable="true" ondragstart="drag(event)" width="336" height="250px">
+
+        </section>
+        <p>Thanking you for coming to our website visit frequenrly</p>
+
+    </main>
+</body>
+
+</html>

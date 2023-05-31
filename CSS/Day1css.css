@@ -1,0 +1,78 @@
+#container
+{
+    background-color:#dddddd;
+    font-size: 20px;
+}
+#para1
+{
+    color:red;
+}
+#para1+p{
+    color:blue;
+}
+ul>li
+{
+    list-style: none;
+    display: inline;
+}
+input[type="text"]
+{
+    border-radius:50px;
+    background-color:purple;
+}
+ #container2+p{
+    color:orange;
+}
+
+table,th,td{
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 10px;
+}
+form{
+    
+
+    background-color:#51D1F0;
+    margin-left: 400px;
+    width: 50%;
+    font-family:Comic Sans MS;
+    border: 20px ridge;
+}
+
+ .form1 input{
+     width: 40%;
+     border: 10px ridge;
+ }
+
+ 
+ form input[name="veg"]
+ {
+    width: 10px;
+    
+ }
+ form input[type="submit"]
+ {
+    border-radius: 25px;
+    width: 20%;
+    margin: 5px;
+ }
+#head {
+    text-align: center;
+}
+.form3{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+table{
+    margin-left: 200px;
+}
+tr:nth-child(even)
+{
+    background-color:aquamarine;
+}
+body{
+    background-color: #EBCA99;
+    
+}

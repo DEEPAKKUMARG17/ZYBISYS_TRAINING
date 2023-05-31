@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> semantics of page</title>
+    <style>
+        nav{
+            display:flex;
+            justify-content: space-between;
+        }
+        li{
+            display: inline;
+            list-style: none;
+            }
+        li a{
+         text-decoration: none;
+         color:aliceblue;
+         padding: 10px;
+         letter-spacing: 1px;
+
+        }
+        table,
+        th,
+        td,
+        tr {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+       
+       
+        h4{
+            text-decoration-line: underline;
+            text-decoration-thickness:5px
+        }
+        .label2
+        {
+            position:absolute;
+            float:left;
+            left:200px;
+        }
+        .input
+        {
+            position:absolute;
+            float:left;
+            left:350px;
+
+        }
+        textarea{
+            position:absolute;
+            float:left;
+            left:350px;
+        }
+        
+        
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="background-color: #daa520; padding-left: 45% ;" >welcome to the website</h1>
+        <nav style="background-color:lightsalmon">
+
+            <img src="images/sara.jfif" alt="display" width="100px" height="100px" style="display:inline-block; border-radius: 50px;">
+            <h1 style="display: inline-block; position: absolute; left:150px;top :102px;">SARANATHAN COLLEGE OF ENGINEERING</h1>
+            
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+
+        
+        </nav>
+    </header>
+    <main>
+        <section style="background-color: 	#ffe4c4; display: inline-block;" id="about">
+            <h3 style="text-decoration-line: underline;text-decoration-thickness: 5px;"> About us</u> </h3>
+            <p>Saranathan College of Engineering was founded by <mark>Vidya Seva Ratnam”, “Guru Seva Mani” Auditor Sri.
+                    K. Santhanam in the year 1998</mark>. It was so named in respectful memory of his Guru Principal
+                Saranathan, the greatest ever Principal of National College. It is a self financing college approved by
+                AICTE and affiliated to Anna University, Chennai.
+
+                The college was temporarily (approx. 2 years) located in the Seshasayee Institute of Technology, thanks
+                to the gracious permission from the Honorary Secretary and Correspondent of that Institution, Er. G.
+                Sundaram and shifted to its current sprawling 40 acre campus on the Chennai – Madurai Expressway at
+                Panjappur on 3rd January 2000 and was formally inaugurated on 19th October 2000, by “Peraasiriyar K
+                Anbazhagan, the then Minister of Education, Government of Tamil Nadu.
+
+                The college has a current annual intake of 660 students for the 7 branches offered at the undergraduate
+                level and 132 students for the 5 courses offered at the post-graduate level.
+
+                With a built up area of 200000 sq ft, 8 seminar halls and a state of the art library with more than
+                55688 books and 225 periodicals and journals (both national and international), the college offers the
+                ideal environment for the students to absorb and assimilate the top class technical education and
+                professional training offered.
+
+                The college has a well equipped Computer Centre and has installed internet with 76 Mbps connectivity.
+                The entire college is networked with unique log-in IDs and passwords for each student. The Computer
+                Centre takes great pride in the fact that they have installed and run a dedicated “cloud centre”.</p>
+        </section>
+        <section style="background-color:#ffe4b5; display: inline-block; " id="services">
+            <h3 style="text-decoration-line: underline;text-decoration-thickness:5px">SERVICES OFFERED</h3>
+            <ul>
+                <li>
+                    <h4>Cloud Computing</h4>
+                    <p style="font-weight: 300;">The term cloud refers to a network or the internet. It is a technology that uses remote servers on the internet to store, manage, and access data online rather than local drives. 
+                        The data can be anything such as files, images, documents, audio, video, and more.</p>
+                </li>
+                <li>
+                    <h4> Devops</h4>
+
+                    <p>DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. 
+                        This speed enables organizations to better serve their customers and compete more effectively in the market.</p>
+                </li>
+                <li>
+                    <h4>machine learning</h4>
+
+                    <p>A Machine Learning system learns from historical data, builds the prediction models, and whenever it receives new data, predicts the output for it. The accuracy of predicted output depends upon the amount of data, as the huge amount of data helps to build a better model which predicts the output more accurately.
+
+                        Suppose we have a complex problem, where we need to perform some predictions, so instead of writing a code for it, we just need to feed the data to generic algorithms, and with the help of these algorithms, machine builds the logic as per the data and predict the output. Machine learning has changed our way of thinking about the problem. 
+                        </p>
+                </li>
+
+            </ul>
+        </section>
+        <section id="contact" style=" padding:50px;margin-left: 200px;">
+            <form style="margin-left: 200px;">
+                <label for="name" class="label2">Name:</label>
+                <input type="text" name="name" id="name" class="input"><br><br>
+                <label for="number" class="label2">Phone Number:</label>
+                <input type="number" name="number" id="number" class="input"><br><br>
+                <label for="area" class="label2">Enter Description</label>
+                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+
+            </form>
+        </section>
+        <br><br><br><br><br>
+        
+        <section id="table">
+            <table >
+                <tr>
+                    <th>COLLEGE NAME</th>
+                    <th>COURSES OFFERED</th>
+                    <th>ADMISSION CODE</th>
+                    <th>CUTOFF REQUIRED</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">SARANATHAN COLLEGE OF ENGINEERING</td>
+                    <td>COMPUTER SCIENCE AND ENGINEERING</td>
+                    <td rowspan="3">43536</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>ELECTRICAL AND ELECTRONICS ENGINEERING</td>
+                    <td>230</td>
+                </tr>
+                <tr>
+                    <td>ELECTRICAL AND COMMUNICATION ENGINEERING</td>
+                    <td>134</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">RAMAKRISHNA COLLEGE OF ENGINEERING</td>
+                    <td>Robotics</td>
+                    <td rowspan="3">14567</td>
+                    <td>190</td>
+                </tr>
+                <tr>
+                    <td>mechatroincs</td>
+                    <td>148</td>
+
+                </tr>
+                <tr>
+                    <td>Instrumentation and control</td>
+                    <td>170</td>
+
+                </tr>
+                <tr>
+                    <td rowspan="3">NATIONAL INSTITUTE OF TECHNOLOGY</td>
+                    <td>INSTRUMENTATION AND CONTROL</td>
+                    <td rowspan="3">78654</td>
+                    <td>187</td>
+                </tr>
+                <tr>
+                    <td>THREE DIMENTION TECHNOLOGY</td>
+                    <td>179</td>
+                </tr>
+                <tr>
+                    <td>PRODOCTION ENGINEERING</td>
+                    <td>169</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+    <footer style="background-color: burlywood;">
+        <p style="text-align: center;">All Rights are reserved @zybisys Contact +45347-97989🤣👏</p>
+    </footer>
+</body>
+
+</html>

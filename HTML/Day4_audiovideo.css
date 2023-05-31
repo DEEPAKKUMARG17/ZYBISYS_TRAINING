@@ -1,0 +1,54 @@
+header{
+    background-color: rgba(0, 0,0,0.6);   
+    position: sticky;
+    top:0px;
+
+}
+nav{
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0,0,0.6);
+    
+    }
+ul{
+    list-style: none;
+}
+li {
+    
+    display: inline;
+    padding:10px;
+}
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    
+}
+form{
+    display:flex;
+    flex-direction: column;
+}
+
+input{
+    width:150px;
+    margin-left: 60px;
+}
+.submit{
+    width:100px;
+    background-color: darkkhaki;
+    
+}
+#form1{
+   margin-left: 500px;
+   background-color: cornflowerblue;
+   width: 500px;
+}
+#div1{
+    height: 300px;
+    width:400px;
+    padding: 10px;
+    border: 1px solid black;
+}

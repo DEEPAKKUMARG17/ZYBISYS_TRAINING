@@ -1,0 +1,144 @@
+<!--This a html page for Practising form elements ,it has checkbox ,radio,dropdown,color,time etc-->
+<!DOCTYPE HTML 5>
+<html>
+
+<head>
+  <title>FORM PAGE</title>
+  <style>
+    .block1 {
+      border: 2px solid black;
+      background-color: #dddddd;
+      height: 1000px;
+      width: 50%;
+      position: absolute;
+      right: 250px;
+      justify-content: center;
+      border-radius: 25px;
+    }
+
+    label {
+      position: relative;
+      left: 50px;
+    }
+
+    textarea {
+      position: absolute;
+      left: 300px;
+      border-radius: 25px;
+    }
+
+    input {
+      position: absolute;
+      left: 300px;
+      border-radius: 25px;
+    }
+
+    .input {
+      position: absolute;
+      left: 300px;
+      border-radius: 25px;
+    }
+
+    .check1 {
+      position: relative;
+      left: 320px
+    }
+
+    form {
+      margin-top: 10px;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+
+    .photo {
+      display:inline-block;
+      position:absolute;
+      top:0px;
+      left:240px
+    
+
+    }
+  </style>
+</head>
+
+<body style="background-color:#495F75;background-image: url('images/top.jpg');">
+  <h1 style="border-bottom:2px solid black"><i>WELCOME TO THE FORM PAGE</i></h1>
+  <div class="block1" style="background-color:#D28140">
+    <div class="photo">
+      
+    </div>
+    <form style="margin-top: 20px;">
+       <!--input field for getiing input from users-->
+      <label for="phonenumber">PHONE NUMBER:</label>
+      <input type="number" id="phonenumber" name="phonenumber" required pattern="[7-9]{1}[0-9]{9}"
+        title="enter 10 digit valid number" /><br><br>
+
+      <label for="name">NAME</label>
+      <input type="text" id="name" name="name" Required pattern="[A-Za-z]+" tittle="only alphapets" />
+      <br><br>
+
+      <label for="email">EMAIL:</label>
+      <input type="email" id="email" name="email" Required />
+      <br><br>
+
+      <label for="birth">DATE OF BIRTH:</label>
+      <input type="date" id="birth" name="birth" required min="2010-01-01" max="2023-12-31"
+        tittle="enter date in writw formate" />
+      <br><br>
+
+      <label for="age">AGE:</label>
+      <input type="number" id="age" name="age" required min="1" max="100" tittle="only numbers" />
+      <br><br>
+          <!--Textarea elemnt to get 200 lines as input-->
+      <label for="textarea">ENTER YOUR DESCRIPTION:</label>
+      <textarea type="text" minlength="5" maxlength="200" name="textarea" required></textarea>
+      <br><br><br>
+       <!--color input element-->
+      <input type="color"><br><br>
+        <!--Time input Element to get the local time of the computer-->
+      <label for="time">TIME:</label>
+      <input type="datetime-local" name="time">
+      <br><br>
+        <!--Checkbox input element-->
+      <label for="check">SELECT THE PROGRAMMING LANGUAGE:</label><br><br>
+
+      <input type="checkbox" id="python" name="python" checked />
+      <label for="python" class="check1">PYTHON</label><br>
+
+      <input type="checkbox" id="c" name="c" />
+      <label for="c" class="check1">C</label><br>
+
+      <input type="checkbox" id="javascript" name="javascript" />
+      <label for="javascript" class="check1">JAVASCRIPT</label><br>
+
+        <!--Radio input element-->
+      <label for="radio">SELECT YOUR HOME TOWN</label><br><br>
+
+      <input type="radio" id="trichy" name="district" />
+      <label for="district" class="check1">TRICHY</label><br>
+
+      <input type="radio" id="thanjavur" name="district" />
+      <label for="district" class="check1">THANJAVUR</label><br>
+
+      <input type="radio" id="dindugal" name="district" />
+      <label for="district" class="check1">DINDUGAL</label><br><br>
+             <!--Dropdown Input Element-->
+      <label>SELECT THE COURSE</label>
+      <select style="border-radius:25px;" class="input">
+        <option value="COMPUTER SCIENCE" selected>COMPUTER SCIENCE</option>
+        <option value="ELECTRICAL AND ELECTRONICS ENGINEERING">ELECTRICAL AND ELECTRONICS ENGINEERING</option>
+        <option value="ELECTRICAL AND COMMUNICATION ENGINEERING">ELECTRICAL AND COMMUNICATION ENGINEERING</option>
+        <option value="INSTRUMENTAL AND CONTROL ENGIEERING">INSTRUMENTAL AND CONTROL ENGIEERING</option>
+        <select><br><br>
+         <!--Submit input element-->
+          <input type="submit" id="submit" name="submit">
+
+    </form>
+  </div>
+
+</body>
+
+
+</html>
