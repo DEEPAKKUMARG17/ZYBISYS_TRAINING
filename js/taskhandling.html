@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name"></label>
+     <input type="text" id="name" name="name">
+     <input type="submit" id="submit" onclick = "insert()">
+     <ul id="ulist"></ul>
+     <div id="task"></div>
+     <script>
+        let input=document.getElementById("name");
+        let btn=document.getElementById("submit");
+        let task=document.getElementById("task");
+        let ui=document.getElementById("ulist");
+
+        function insert()
+        {
+            console.log(1);
+            let val=input.value;
+            console.log(val);
+            trigerpromise(val).then(function(response)
+            {
+                    let li=document.createElement("li");
+                    li.innerHTML=response;
+                    ui.appendChild(li);
+                    input.value="";
+            }).catch(function(response)
+            {
+                          alert(response);
+            })
+            
+        
+
+        }
+        function trigerpromise(data)
+        {
+            return new Promise(function(resolve,reject)
+            {
+                setTimeout(function()
+                {
+                    console.log(data.length);
+                        if(data.length<10)
+                        {
+                            resolve(data);
+                        }
+                        else
+                        {
+                            reject("enter the number less than 10")
+                        }
+                },2000);
+            }) ;
+        }
+        
+       
+     </script>
+</body>
+</html>

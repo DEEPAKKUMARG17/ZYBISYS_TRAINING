@@ -1,0 +1,153 @@
+header {
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 999;
+  }
+  h1{
+    font-size: 30px;
+  }
+  #data_input
+  {
+    border-radius: 50px;
+  }
+  #data_data
+  {
+    border-radius: 50px;
+    border-style: none;
+    box-sizing: border-box;
+  }
+#main-content
+{
+    /* border:2px solid green; */
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    align-items: center;
+    background-color: #063970;
+}
+#lcontainer
+{
+    border:  2px solid red;
+    max-width: 290px;
+    max-height: 255px;
+    margin: 6x;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+#lcontainer p{
+    margin: 8px;
+}
+#scontainer
+{
+    border: 2px solid purple;
+    width: 200px;
+    height: 130px;
+    
+}
+#flag_img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#popupbackground{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(201, 201, 201, 0.483);
+    z-index: 999;
+    
+}
+#popup{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    font-size: 12px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+#closeIcon{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+#division_1{
+    display:flex;
+
+}
+#division_1 p{
+overflow-y: scroll;
+font-size: 15px;
+padding-left: 20px;
+padding-top: 30px;
+width: 200px;
+height: 100px;
+}
+
+#image_1{
+    height:200px;
+    width:200px;
+
+}
+option:hover
+{
+    background-color: #abdbe3;
+}
+@media screen and (max-width:426px) 
+{
+    #main-content
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    header h1
+    {
+        font-size: 20px;
+    }
+    header
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #main-container
+    {
+        text-align: center;
+    }
+    /* #popup
+    {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    #division_1
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
